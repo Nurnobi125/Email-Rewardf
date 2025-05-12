@@ -85,16 +85,21 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Create a text banner to greet the user
     banner_text = """
-    🎉 Welcome to the Email-Reward Bot! 🎉
+🎉 Welcome to the Email-Reward Bot! 🎉
 
-    🚀 Send your email:password to earn rewards.
-    📈 Limit: 10 submissions per day.
-    📧 Email Submit Like :Email:password
+🚀 Send real, working email:password combos to earn rewards.
+⚠️ Fake submissions = instant ban. We verify everything!
 
-    📊 Use /balance to check your balance.
-    💸 Use /withdraw to request a withdrawal.
+📧 Format: email@example.com:yourpassword123
+📈 Daily Limit: 10 valid submissions per user.
 
-    Let's get started!
+💰 **Earned enough? Withdraw just $1 directly to your bkash account.
+✅ Use /balance to check your points.
+🏦 Use /withdraw to cash out.
+
+🛡️ We’re watching — keep it clean, keep it real.
+
+Let’s get started and earn like a pro! 🔥
     """
 
     # Send the banner message to the user
