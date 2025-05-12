@@ -7,11 +7,7 @@ from telegram.ext import (
     ApplicationBuilder, CommandHandler, MessageHandler, CallbackQueryHandler,
     ContextTypes, filters
 )
-from datetime import datetime
-now = datetime.now()
-if now.hour >= 1 and now.hour < 8:
-    print("Bot sleeping... 💤")
-    exit()
+
 
 # === Load fake email domains ===
 FAKE_DOMAINS = []
