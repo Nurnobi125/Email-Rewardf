@@ -71,7 +71,12 @@ if not cur.fetchone():
     cur.execute("INSERT INTO settings (id, email_price, submission_limit) VALUES (1, 0.05, 10)")
     conn.commit()
 
-ADMIN_ID = 5222442956  # Replace with your actual Telegram ID
+ADMIN_IDS = [5222442956, 6909530441]  # Telegram admin user IDs
+
+# তারপর চেক করবে এভাবে:
+if user_id in ADMIN_IDS:
+    # Admin access granted
+
 
 # === Telegram Handlers ===
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
